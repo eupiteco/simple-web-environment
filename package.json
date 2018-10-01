@@ -1,0 +1,25 @@
+{
+  "name": "sedhowto",
+  "version": "1.0.0",
+  "description": "Reescrita de HTML e CSS do guida de `sed`escrito pelo [Aurelio](http://aurelio.net) / [@aureliojargas](https://github.com/aureliojargas). O documento original pode ser encontrado em http://aurelio.net/sed/sed-howto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eupiteco/sed-HOWTO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eupiteco/sed-HOWTO/issues"
+  },
+  "homepage": "https://github.com/eupiteco/sed-HOWTO#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
