@@ -1,20 +1,25 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-var cleanCSS = require ('gulp-clean-css');
-var sourcemaps = require ('gulp-sourcemaps');
 
+var autoprefixer = require('autoprefixer');
+var postcss = require('gulp-postcss');
+var sass = require('gulp-sass');
+//var sourcemaps = require('gulp-sourcemaps');
+
+// Sass roda primeiro compilando tudo pra css, daí pra diante entra o
+// sourcemaps pra minifica, gerar mapas, fazer autoprefix etx.
+// postcss é um plugin do sourcemaps
+// autoprefixer é um plugin do postcss
  
-gulp.task('sass', function () {
+gulp.task('style', function () {
   return gulp.src('assets_src/sass/style.scss')
     .pipe(sass().on('error', sass.logError))
-		.pipe(cleanCSS({compatibility: 'ie8', debug: true}, function(details) {
-			console.log(`${details.name}: ${details.stats.originalSize}`);
-			console.log(`${details.name}: ${details.stats.minifiedSize}`);
-		}))
+		.pipe(postcss([
+				autoprefixer
+			]))
     .pipe(gulp.dest('assets/css'))
 });
  
 gulp.task('default', function () {
-  gulp.watch('assets_src/sass/*.scss', ['sass']);
+  gulp.watch('assets_src/sass/*.scss', ['style']);
 });
 

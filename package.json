@@ -16,9 +16,15 @@
     "url": "https://github.com/eupiteco/sed-HOWTO/issues"
   },
   "homepage": "https://github.com/eupiteco/sed-HOWTO#readme",
+	"browserslist": [
+		"last 2 versions"
+	],
   "devDependencies": {
+    "autoprefixer": "^9.1.5",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^3.10.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4"
   }
