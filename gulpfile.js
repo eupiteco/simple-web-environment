@@ -1,3 +1,8 @@
+//TODO
+// - browsersync
+// - css maps dentro de assets_src
+// renomear assets/src pra só src
+
 var gulp = require('gulp');
 
 var postcss = require('gulp-postcss');

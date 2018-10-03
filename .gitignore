@@ -1,6 +1,6 @@
 .sass-cache/
 *.css.map
-assets/
+assets/*
 node_modules/
  
 
