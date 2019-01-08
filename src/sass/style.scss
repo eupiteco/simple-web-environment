@@ -1,5 +1,17 @@
 body {
-	background-color: lightblue;
-	border: solid 3px lightgreen;
+	background-color: floralwhite;
+	color: darkslategray;
+	display: flex;
+		align-items: center;
+		justify-content: center;
+	font-family: sans-serif;
+	height: 100vh;
 	transition: background-color 1s;
+}
+
+.wrapper {
+	background-color: snow;
+	border-radius: 3px;
+	box-shadow: 0 0 5px #30303010, 0 3px 5px #30303050;
+	padding: 30px;
 }

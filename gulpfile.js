@@ -28,7 +28,7 @@ gulp.task('style', function () {
 });
 
 gulp.task('watch', function (){
-	gulp.watch('src/sass/*.scss', gulp.parallel(['style']));
+	gulp.watch('src/sass/*.scss', ['style']);
 });
 
 gulp.task('webserver', function() {
